@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif !important;
+    background-color: #0c0f1e !important;
+}
+
+/* navbar-start */
+
+.navbar {
+    background-color: #0c0f1e;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item a {
+    color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: rgb(255, 215, 0);
+}
+
+.navbar-nav .nav-item .nav-link:not(.active):hover {
+    color: rgb(255, 215, 0);
+}
+
+.search {
+    border-left: 1px solid rgb(255, 215, 0);
+}
+
+.search svg {
+    color: rgb(255, 215, 0);
+    
+}
+
+.navbar .navbar-toggler {
+    color: #fff;
+    font-size: 25px;
+    border-color: #fff;
+    
+} 
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler[aria-expanded="true"] {
+    border-color: rgb(255, 215, 0);
+    color: rgb(255, 215, 0);
+}
+
+/* navbar-end */
+
+.choose-game li {
+    color: rgb(255, 215, 0);
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.choose-game li.active {
+    background-color: rgb(255, 215, 0);
+    color: #0c0f1e;
+}
+
+.choose-game li:not(.active):hover {
+    color: #fff;
+}
+
+.title-school .games {
+    color: #fff;
+    font-size: 3.5rem;    
+}
+
+.card-games {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-games::before {
+    content: attr(data-game);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #ffff008f;
+    color: #0c0f1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transform: translateY(calc(-100% - 5px)); 
+    transition: 0.3s;
+}
+
+.card-games:hover::before {
+    transform: translateY(0);
+}
+
+
+/* best-games-start */
+.best-games p {
+    color: rgb(255, 215, 0);
+}
+
+.game-name {
+    border: 2px solid rgb(255, 215, 0); 
+    overflow: hidden;
+}
+
+.game-name h2 {
+    background-color: rgb(255, 215, 0);
+    color: #0c0f1e;
+    font-size: 22px; 
+}
+
+blockquote {
+    color: rgb(255, 215, 0);
+}
+
+.price-game {
+    color: rgb(255, 215, 0);
+}
+
+span {
+    background-color: rgb(255, 215, 0);
+    color: #0c0f1e;
+}
+/* best-games-end */ 
+
+/* advertise-start */
+.group-advertise :is(svg , .pc-game) {
+    font-size: 2rem;
+}
+
+/* advertise-end */
+
+/* project-start */
+.project {
+    background-color: #0c0f1e;
+}
+/* project-end */
+
+/* blog-start */
+
+.blog{
+    background-image: url("../images/wallpaperflare.com_wallpaper\ \(9\).jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.blog::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(12, 15, 30 , .7);
+}
+
+.main-title svg {
+    font-size: 10rem;
+}
+
+.main-title::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background-color: #aaa;
+}
+
+.basic-game {
+    background-color: #0c0f1e;
+}
+
+/* blog-end */
+
+/* subscribe-start */
+.subscribe {
+    background-color: rgb(255, 215, 0);
+}
+
+.subscribe input[type="text"] {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    background-color: rgb(255, 215, 0);
+    color: #fff;
+    width: 100%!important;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+input[type="text"]:focus {
+    color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #0c0f1e;
+    color: rgb(255, 215, 0);
+}
+/* subscribe-end */
+/* footer-start */
+.footer ul li svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer ul li .facebook {
+    background-color: #1877f2;
+}
+.footer ul li .twitter {
+    background-color: #000;
+}
+.footer ul li .linkedin {
+    background-color: #0a66c2;
+}
+.footer ul li .dribble {
+    background-color: #ea4c89;
+}
+/* footer-end */
+.main-btn {
+    background-color: rgb(255, 215, 0)!important;
+    color: #0c0f1e!important;
+    padding: 0.5rem 1rem!important;
+}
+
+
