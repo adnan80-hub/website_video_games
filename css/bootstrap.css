@@ -9,6 +9,20 @@ body {
     background-color: #0c0f1e !important;
 }
 
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0c0f1e;
+}
+
 /* navbar-start */
 
 .navbar {
@@ -38,15 +52,15 @@ body {
 
 .search svg {
     color: rgb(255, 215, 0);
-    
+
 }
 
 .navbar .navbar-toggler {
     color: #fff;
     font-size: 25px;
     border-color: #fff;
-    
-} 
+
+}
 
 .navbar .navbar-toggler:focus {
     box-shadow: none;
@@ -58,6 +72,49 @@ body {
 }
 
 /* navbar-end */
+
+/* ============== start section ========================== */
+
+.group-img {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.group-img::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #0c0f1e, transparent);
+}
+
+.group-img img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.group-img .txt-section {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.txt-section h1 {
+    font-size: 50px;
+    font-family: "Varela Round", sans-serif !important;
+}
+
+.txt-section .play-now {
+    font-size: 13px;
+    width: 120px;
+}
+
+/* ============== end section ========================== */
 
 .choose-game li {
     color: rgb(255, 215, 0);
@@ -76,7 +133,7 @@ body {
 
 .title-school .games {
     color: #fff;
-    font-size: 3.5rem;    
+    font-size: 3.5rem;
 }
 
 .card-games {
@@ -96,7 +153,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    transform: translateY(calc(-100% - 5px)); 
+    transform: translateY(calc(-100% - 5px));
     transition: 0.3s;
 }
 
@@ -111,14 +168,14 @@ body {
 }
 
 .game-name {
-    border: 2px solid rgb(255, 215, 0); 
+    border: 2px solid rgb(255, 215, 0);
     overflow: hidden;
 }
 
 .game-name h2 {
     background-color: rgb(255, 215, 0);
     color: #0c0f1e;
-    font-size: 22px; 
+    font-size: 22px;
 }
 
 blockquote {
@@ -133,10 +190,11 @@ span {
     background-color: rgb(255, 215, 0);
     color: #0c0f1e;
 }
-/* best-games-end */ 
+
+/* best-games-end */
 
 /* advertise-start */
-.group-advertise :is(svg , .pc-game) {
+.group-advertise :is(svg, .pc-game) {
     font-size: 2rem;
 }
 
@@ -146,11 +204,12 @@ span {
 .project {
     background-color: #0c0f1e;
 }
+
 /* project-end */
 
 /* blog-start */
 
-.blog{
+.blog {
     background-image: url("../images/wallpaperflare.com_wallpaper\ \(9\).jpg");
     background-size: cover;
     background-position: center;
@@ -163,7 +222,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(12, 15, 30 , .7);
+    background-color: rgb(12, 15, 30, .7);
 }
 
 .main-title svg {
@@ -198,7 +257,7 @@ span {
     border-bottom: 1px solid #fff;
     background-color: rgb(255, 215, 0);
     color: #fff;
-    width: 100%!important;
+    width: 100% !important;
 }
 
 input::placeholder {
@@ -213,6 +272,7 @@ input[type="submit"] {
     background-color: #0c0f1e;
     color: rgb(255, 215, 0);
 }
+
 /* subscribe-end */
 /* footer-start */
 .footer ul li svg {
@@ -223,20 +283,22 @@ input[type="submit"] {
 .footer ul li .facebook {
     background-color: #1877f2;
 }
+
 .footer ul li .twitter {
     background-color: #000;
 }
+
 .footer ul li .linkedin {
     background-color: #0a66c2;
 }
+
 .footer ul li .dribble {
     background-color: #ea4c89;
 }
+
 /* footer-end */
 .main-btn {
-    background-color: rgb(255, 215, 0)!important;
-    color: #0c0f1e!important;
-    padding: 0.5rem 1rem!important;
+    background-color: rgb(255, 215, 0) !important;
+    color: #0c0f1e !important;
+    padding: 0.5rem 1rem !important;
 }
-
-
